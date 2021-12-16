@@ -14,7 +14,7 @@ import org.thymeleaf.util.StringUtils;
 @RequestMapping("/api")
 class BoardApiController {
 
-    private BoardRepository repository;
+    private final BoardRepository repository;
 
     // Aggregate root
     @GetMapping("/boards")
